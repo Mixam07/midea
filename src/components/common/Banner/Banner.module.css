@@ -1,0 +1,94 @@
+.banner{
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.blue{
+    background: linear-gradient(92.52deg, #259BCD 0%, #2568CD 100%);
+}
+
+.white{
+    background: linear-gradient(92.52deg, #FFFFFF 0%, #ECECEC 100%);
+}
+
+.decoration{
+    height: 150%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.blue .decoration{
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.white .decoration{
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.stick{
+    display: block;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    z-index: 0;
+}
+
+.blue .stick{
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.white .stick{
+    background: rgba(168, 168, 168, 0.1);
+}
+
+.stick:nth-child(1){
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 80px;
+}
+
+.stick:nth-child(2){
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 150px;
+}
+
+.stick:nth-child(3){
+    top: 50%;
+    right: calc(50% + 15px);
+    transform: translateY(-50%);
+    width: 350px;
+    height: 70px;
+}
+
+.stick:nth-child(4){
+    top: 50%;
+    right: calc(50% + 15px + 150px);
+    width: 350px;
+    height: 40px;
+}
+
+.stick:nth-child(5){
+    bottom: 0;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: 80px;
+}
+
+.stick:nth-child(6){
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 150px;
+    height: 40px;
+}

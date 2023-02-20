@@ -1,0 +1,52 @@
+.list{
+    display: flex;
+}
+
+.item{
+    padding-right: 24px;
+    line-height: 24px;
+    position: relative;
+}
+
+.href{
+    font-size: 14px;
+    color: #828282;
+}
+
+.item:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    background: url("../../assets/icons/arrow/arrow_right-gray.svg") center/contain no-repeat;
+}
+
+.item:last-child{
+    padding: 0;
+}
+
+.item:last-child .href{
+    color: #333333;
+}
+
+.item:last-child:after{
+    display: none;
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px){
+}
+
+@media (max-width: 762px){
+}
+
+@media (max-width: 576px){
+    .navigation{
+        display: none;
+    }
+}

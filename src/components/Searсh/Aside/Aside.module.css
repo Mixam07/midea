@@ -1,0 +1,83 @@
+.main,
+.button,
+.btn,
+.item{
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.main,
+.button{
+    margin-bottom: 10px;
+}
+
+.button,
+.btn{
+    position: relative;
+    padding-left: 20px;
+}
+
+.btn{
+    text-align: start;
+}
+
+.button::before,
+.btn::before{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../../../assets/icons/arrow/arrow_left.svg") center/contain no-repeat;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: .5s transform;
+}
+
+.btns{
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list{
+    margin-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.active::before,
+.activeList::before{
+    transform: translateY(-50%) rotate(0);
+}
+
+.item{
+    margin-left: -5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+
+.activeItem{
+    background: #EDEDED;
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px){
+    .aside{
+        display: none;
+    }
+}
+
+@media (max-width: 762px){
+}
+
+@media (max-width: 576px){
+}

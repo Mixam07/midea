@@ -1,0 +1,102 @@
+.wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+
+.btn{
+    padding: 10px 40px 10px 15px;
+    width: 100%;
+    text-align: start;
+    position: relative;
+    line-height: 24px;
+    color: #333333;
+}
+
+.btn::after{
+    position: absolute;
+    content: "";
+    right: 15px;
+    top: 50%;
+    height: 24px;
+    width: 24px;
+    background-color: red;
+    right: 0;
+    transform: translateY(-50%);
+    background: url('../../../assets/icons/arrow/arrow_right.svg') center/contain no-repeat;
+    transition: .5s transform;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px 30px;
+}
+
+.item{
+    grid-column: 1/2;
+}
+
+.list{
+    grid-column: 2/3;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.href{
+    display: block;
+    padding: 10px 15px;
+    line-height: 24px;
+    color: #333333;
+    transition: .5s color;
+}
+
+.activeHref{
+    font-weight: 700;
+}
+
+.href:hover{
+    color: #2585CD;
+}
+
+.span{
+    display: none;
+    width: 65px;
+    height: 5px;
+    background: #4F4F4F;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1200px){
+}
+
+@media (max-width: 992px){
+}
+
+@media (max-width: 762px){
+    .items{
+        grid-template-columns: auto;
+    }
+
+    .list{
+        grid-column: 1/2;
+        padding-left: 30px;
+    }
+
+    .activeBtn::after{
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .href:hover{
+        color: #333333;
+    }
+
+    .line{
+        display: block;
+    }
+}

@@ -1,0 +1,12 @@
+.button{
+    background: #2585CD;
+    border-radius: 25px;
+    color: #fff;
+    padding: 15px 70px;
+}
+
+.transparent{
+    background: none;
+    border: 1px solid #2585CD;
+    color: #2585CD;
+}
