@@ -8,8 +8,8 @@ import { useRef } from "react";
 const Catalog = (props) => {
     const [activeId, setActiveId] = useState(1),
         [isBigWindow, setIsBigWindow] = useState(window.innerWidth > 762),
-        list = props.catalog.map(item => (
-            <li key={item.id} className={s.item}>
+        list = props.catalog.map((item, i) => (
+            <li key={i + 1} className={s.item}>
                 <button onClick={ () => { setActiveId(item.id) } } className={classNames(s.btn, {[s.activeBtn]: item.id === activeId})}>{item.title}</button>
             </li>
         )),

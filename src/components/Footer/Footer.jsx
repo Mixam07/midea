@@ -25,7 +25,7 @@ const Footer = (props) => {
                     </div>
                     <div className={s.item}>
                         <h2 className={s.title}>Номер телефона</h2>
-                        <a href="tel:+000000000000" className={s.phone}>+000000000000</a>
+                        <a href="tel:+998977000708" className={s.phone}>+998 97 700 0708</a>
                     </div>
                     <div className={s.social}>
                         <a href="#">

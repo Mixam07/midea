@@ -23,7 +23,7 @@
     right: 15px;
 }
 
-.desc{
+.title{
     display: block;
     font-size: 14px;
     color: #4F4F4F;
@@ -64,16 +64,13 @@
         padding: 10px;
     }
 
-    .mini .desc{
+    .mini .title{
         font-size: 12px;
+        margin-bottom: 5px;
     }
 
     .mini .cost{
         font-size: 14px;
-    }
-
-    .mini .desc{
-        margin-bottom: 5px;
     }
 
     .mini .buy{
@@ -86,16 +83,13 @@
         padding: 10px;
     }
 
-    .desc{
+    .title{
         font-size: 12px;
+        margin-bottom: 5px;
     }
 
     .cost{
         font-size: 14px;
-    }
-
-    .desc{
-        margin-bottom: 5px;
     }
 
     .buy{
@@ -112,19 +106,15 @@
         padding: 15px;
     }
 
-    .desc,
-    .mini .desc{
+    .title,
+    .mini .title{
         font-size: 14px;
+        margin-bottom: 10px;
     }
 
     .cost,
     .mini .cost{
         font-size: 16px;
-    }
-
-    .desc,
-    .mini .desc{
-        margin-bottom: 10px;
     }
 
     .buy,

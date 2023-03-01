@@ -4,13 +4,13 @@ import Aside from "./Aside/Aside";
 import Container from "../common/Container/Container";
 import Information from "../Information/Information";
 import Navigation from "../Navigation/Navigation";
-import Card from "../Card/Card";
 import s from "./Seacrch.module.css";
 import classNames from "classnames";
 import { useState } from "react";
+import CardContainer from "../Card/CardContainer";
 
 const Search = (props) => {
-    const goods =  props.goods.map((item, i) => <Card key={i + 1} id={i} {...item} isMini={true} setFavourite={props.setFavourite} setBuy={props.setBuy} />);
+    const goods =  props.goods.map((item, i) => <CardContainer key={i + 1} {...item} isMini={true} />);
     const [isActive, setActive] = useState(false);
     const [sort, setSort] = useState("Популярные");
     return(
@@ -41,7 +41,7 @@ const Search = (props) => {
                                         <div className={s.text}>{sort}</div>
                                         <img className={s.img} src={arrow} alt="arrow" />
                                     </button>
-                                    <ul className={classNames(s.items, {[s.activeList]: isActive})}>
+                                    <ul className={classNames(s.items, {[s.active]: isActive})}>
                                         <li>
                                             <button onClick={ () => {setSort("Популярные")} } className={classNames(s.item, {[s.active]: sort === "Популярные"})}>Популярные</button>
                                         </li>

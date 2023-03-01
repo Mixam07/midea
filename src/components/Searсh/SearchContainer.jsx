@@ -20,5 +20,5 @@ const mapStateToProps = (state) => ({
 })
 
 export default compose(
-    connect(mapStateToProps, { getSearchGoods, setFavourite, setBuy, getCatalog }),
+    connect(mapStateToProps, { getSearchGoods, getCatalog }),
 )(SearchAPI);

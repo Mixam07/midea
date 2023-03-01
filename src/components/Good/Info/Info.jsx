@@ -1,5 +1,5 @@
-import image from "../../../assets/img/goods/image_1.png";
 import heart from "../../../assets/icons/heart.svg";
+import heart_active from "../../../assets/icons/heart-active.svg";
 import heart_white from "../../../assets/icons/heart-white.svg";
 import share from "../../../assets/icons/share.svg";
 import share_white from "../../../assets/icons/share-white.svg";
@@ -14,20 +14,25 @@ import Button from "../../common/Button/Button";
 
 const Info = (props) => {
     const [number, setNumber] = useState(1);
+
+    const onClick = () => {
+        props.setFavourite(props.id);
+        props.getCard(props.id);
+    }
     return(
         <section className={s.information}>
             <Container>
                 <div className={s.wrapper}>
                     <div className={s.image}>
-                        <img src={image} alt="image" />
+                        <img src={props.img} alt="image" />
                         <div className={s.nav}>
                             <button className={s.back}>
                                 <img src={backspace} alt="backspace" />
                             </button>
                             <div className={s.btns}>
-                                <button className={s.icon}>
-                                    <img src={heart_white} alt="heart" />
-                                </button> 
+                                <button onClick={onClick} className={s.icon}>
+                                    {props.isFavourite ? <img src={heart_active} alt="heart" /> : <img src={heart_white} alt="heart" />}  
+                                </button>
                                 <button className={s.icon}>
                                     <img src={share_white} alt="share" />
                                 </button> 
@@ -35,14 +40,14 @@ const Info = (props) => {
                         </div>
                     </div>
                     <div className={s.icons}>
-                        <button className={s.icon}>
-                            <img src={heart} alt="heart" />
-                        </button> 
+                        <button onClick={onClick} className={s.icon}>
+                            {props.isFavourite ? <img src={heart_active} alt="heart" /> : <img src={heart} alt="heart" />}  
+                        </button>
                         <button className={s.icon}>
                             <img src={share} alt="share" />
                         </button> 
                     </div>
-                    <h1 className={s.title}>Набор кухонных принадлежностей из 12 предметов</h1>
+                    <h1 className={s.title}>{props.title}</h1>
                     <div className={s.count}>
                         <h2 className={s.caption}>Количество:</h2>
                         <div className={s.wrap}>
@@ -63,7 +68,7 @@ const Info = (props) => {
                     </div>
                     <div className={s.price}>
                         <h2 className={s.caption}>Цена:</h2>
-                        <div className={s.cost}>275 000 сум</div>
+                        <div className={s.cost}>{props.cost}</div>
                     </div>
                     <div className={s.buttons}>
                         <Button bgColor="transparent">Добавить корзину</Button>

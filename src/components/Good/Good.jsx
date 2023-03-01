@@ -20,8 +20,9 @@ const Good = (props) => {
                     href: "search"
                 }
             ]} />
-            <Info />
-            <Description />
+            <Info getCard={props.getCard} setFavourite={props.setFavourite} id={props.card.id} img={props.card.img}
+                cost={props.card.cost} title={props.card.title} isFavourite={props.card.isFavourite} />
+            <Description desc={props.card.desc} />
             <Information />
         </>
     )

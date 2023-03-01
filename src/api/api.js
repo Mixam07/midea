@@ -1,15 +1,14 @@
-import data, { setBuy, setFavourite } from "./bd.js"
+import data, { getCard, resetBuy, setActive, setBuy, setFavourite, setNumber } from "./bd.js"
 
 export const goods = {
     getGoods: data.goods,
     getGoodsAvailability: data.goodsAvailability,
     getGoodsHot: data.goodsHot,
-    setFavourite: (number, active) => {
-        return setFavourite(number, active);
-    },
-    setBuy: (number, active) => {
-        return setBuy(number, active);
-    }
+    setFavourite: setFavourite,
+    setBuy: setBuy,
+    setActive: setActive,
+    setNumber: setNumber,
+    resetBuy: resetBuy
 }
 
 export const catalog = {
@@ -18,4 +17,8 @@ export const catalog = {
 
 export const search = {
     getGoods: data.goods
+}
+
+export const card = {
+    getCard: getCard
 }

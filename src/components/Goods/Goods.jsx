@@ -1,17 +1,16 @@
 import Container from "../common/Container/Container";
 import s from "./Goods.module.css";
 import classNames from "classnames";
-import { useEffect } from "react";
-import Card from "../Card/Card";
+import CardContainer from "../Card/CardContainer";
 
 const Goods = (props) => {
     const list = props.active === 1 ? props.goods:
                 props.active === 2 ? props.goodsAvailability:
-                props.active === 3 ? props.getGoodsHot : [];
+                props.active === 3 ? props.goodsHot : [];
 
     const goods = list.map((item, i) => (
         <li key={i + 1}>
-            <Card active={props.active} setBuy={props.setBuy} setFavourite={props.setFavourite} id={i} {...item} />
+            <CardContainer {...item} />
         </li>
     ))
 

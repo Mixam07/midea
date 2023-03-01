@@ -47,14 +47,14 @@ const Header = (props) => {
                         </div>
                     </div>
                     <div className={s.nav}>
-                        <NavLink to="/" className={s.item}>
+                        <NavLink to="/basket" className={s.item}>
                             <div className={s.img}>
                                 <img src={bag} alt="bag" />
-                                <div className={s.number}>2</div>
+                                {props.number != 0 && <div className={s.number}>{props.number}</div>}
                             </div>
                             <div className={s.title}>Корзина</div>
                         </NavLink>
-                        <NavLink to="/" className={s.item}>
+                        <NavLink to="/favourite" className={s.item}>
                             <div className={s.img}>
                                 <img src={heart} alt="heart" />
                             </div>

@@ -19,7 +19,7 @@ const catalogReducer = (state = initialState, action) => {
 }
 
 export const setCatalog = (catalog) => ({type: SET_CATALOG, catalog});
-
+//ThunkCreator
 export const getCatalog = () => (dispatch) => {
     dispatch(setCatalog(catalog.catalog))
 }

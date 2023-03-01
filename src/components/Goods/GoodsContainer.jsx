@@ -1,24 +1,16 @@
-import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { getGoods, setActive, setBuy, setFavourite } from '../../redux/reducers/goods-reducer';
+import { getGoods, setActive } from '../../redux/reducers/goods-reducer';
+import { getAvailability, getHot } from '../../redux/reducers/goods-selector';
 import Goods from './Goods';
-
-const GoodsAPI = (props) => {
-    useEffect(() => {
-        props.getGoods();
-    }, []);
-
-    return <Goods {...props} />
-}
 
 const mapStateToProps = (state) => ({
     goods: state.goodsReducer.goods,
-    goodsAvailability: state.goodsReducer.goodsAvailability,
-    getGoodsHot: state.goodsReducer.getGoodsHot,
+    goodsAvailability: getAvailability(state),
+    goodsHot: getHot(state),
     active: state.goodsReducer.active
 })
 
 export default compose(
-    connect(mapStateToProps, { getGoods, setActive, setFavourite, setBuy }),
-)(GoodsAPI);
+    connect(mapStateToProps, { getGoods, setActive }),
+)(Goods);

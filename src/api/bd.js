@@ -3,236 +3,248 @@ import image_2 from "../assets/img/goods/image_2.png";
 import image_3 from "../assets/img/goods/image_3.png";
 import image_4 from "../assets/img/goods/image_4.png";
 
- const data = {
+const desc = `Набор кухонных принадлежностей – все, что может понадобиться Вам во время приготовления пищи. Набор — это прекрасный подарок маме, подруге или любимой. В набор входит 11 предметов и подставка. А именно: удобная лопатка для жарки со сливом для масла, лопатка для выпечки, венчик, щипцы, плоская ложка, лопатка(шпатель) с отверстиями для слива масла, половник, ложка для салата, кисточка для масла, ложка с отверстиями (мини шумовка) и ложка для спагетти.
+Набор изготовлен из силикона с антипригарным покрытием, выдерживающим различные температурные нагрузки и бамбуковых ручек, что делает набор полностью безопасным для здоровья человека. Подставка изготовлена из пластика.`
+
+const data = {
     goods: [
         {
+            id: 1,
             img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из 12 предметов",
             cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
+            desc,
             isFavourite: true,
-            isBuy: false
+            isBuy: true,
+            isActive: false,
+            number: 1
         },
         {
-            img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: true
-        },
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
+            id: 2,
             img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
+            desc,
+            isFavourite:true,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
         },
         {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
+            id: 3,
             img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
         },
         {
+            id: 4,
             img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
+            desc,
             isFavourite: false,
-            isBuy: false
+            isBuy: true,
+            isHot: true,
+            isActive: false,
+            number: 1
         },
         {
+            id: 5,
             img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
+            desc,
             isFavourite: false,
-            isBuy: false
+            isBuy: false,
+            isActive: false,
+            number: 1
         },
         {
+            id: 6,
+            img: image_4,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            number: 1
+        },
+        {
+            id: 7,
             img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isActive: false,
+            number: 1
         },
         {
+            id: 8,
             img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isHot: true,
+            isActive: false,
+            number: 1
         },
         {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
+            id: 9,
             img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
+            desc,
             isFavourite: false,
-            isBuy: false
+            isBuy: false,
+            isActive: false,
+            number: 1
         },
         {
+            id: 10,
             img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
+            title: "Набор кухонных принадлежностей из ...",
             cost: "275 000 сум",
+            desc,
             isFavourite: false,
-            isBuy: false
+            isBuy: false,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 11,
+            img: image_2,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            isHot: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 12,
+            img: image_1,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 13,
+            img: image_3,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: true,
+            isAvailability: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 14,
+            img: image_1,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 15,
+            img: image_4,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 16,
+            img: image_1,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 17,
+            img: image_3,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 18,
+            img: image_4,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            isAvailability: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 19,
+            img: image_2,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: false,
+            isBuy: false,
+            isAvailability: true,
+            isActive: false,
+            number: 1
+        },
+        {
+            id: 20,
+            img: image_1,
+            title: "Набор кухонных принадлежностей из ...",
+            cost: "275 000 сум",
+            desc,
+            isFavourite: true,
+            isBuy: false,
+            isAvailability: true,
+            isHot: true,
+            isActive: false,
+            number: 1
         }
-    ],
-    goodsAvailability: [
-        {
-            img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_2,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        }
-    ],
-    goodsHot: [
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_3,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_1,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
-        {
-            img: image_4,
-            desc: "Набор кухонных принадлежностей из ...",
-            cost: "275 000 сум",
-            isFavourite: false,
-            isBuy: false
-        },
     ],
     catalog: [
         {
@@ -386,32 +398,58 @@ import image_4 from "../assets/img/goods/image_4.png";
     ]
 }
 
-export const setFavourite = (number, active) => {
-    switch(active){
-        case 1:
-            data.goods[number].isFavourite = data.goods[number].isFavourite === true ? false : true;
-            return data.goods[number].isFavourite = data.goods[number].isFavourite
-        case 2:
-            data.goodsAvailability[number].isFavourite = data.goodsAvailability[number].isFavourite === true ? false : true;
-            return data.goodsAvailability[number].isFavourite = data.goodsAvailability[number].isFavourite
-        case 3:
-            data.goodsHot[number].isFavourite = data.goodsHot[number].isFavourite === true ? false : true;
-            return data.goodsHot[number].isFavourite = data.goodsHot[number].isFavourite
+const findItem = (id, fun, arr = data) => {
+    for(let i = 0; i < arr.goods.length; i++){
+        if(arr.goods[i].id == id) return fun(arr.goods[i])
     }
 }
 
-export const setBuy = (number, active) => {
-    switch(active){
-        case 1:
-            data.goods[number].isBuy = data.goods[number].isBuy === true ? false : true;
-            return data.goods[number].isBuy = data.goods[number].isBuy
-        case 2:
-            data.goodsAvailability[number].isBuy = data.goodsAvailability[number].isBuy === true ? false : true;
-            return data.goodsAvailability[number].isBuy = data.goodsAvailability[number].isBuy
-        case 3:
-            data.goodsHot[number].isBuy = data.goodsHot[number].isBuy === true ? false : true;
-            return data.goodsHot[number].isBuy = data.goodsHot[number].isBuy
+export const setFavourite = (id) => {
+    return findItem(id, (item) => {
+        item.isFavourite = !item.isFavourite
+        return item.isFavourite
+    });
+}
+
+export const setBuy = (id, bool) => {
+    return findItem(id, (item) => {
+        if(typeof bool != "boolean"){
+            item.isBuy = !item.isBuy
+        }else{
+            item.isBuy = bool
+        }
+
+        item.number = 1;
+        item.isActive = false;
+
+        return item.isBuy
+    });
+}
+
+export const resetBuy = () => {
+    for(let i = 0; i < data.goods.length; i++){
+        data.goods[i].isBuy = false;
     }
+}
+
+export const getCard = (id) => {
+    return findItem(id, (item) => {
+        return item
+    })
+}
+
+export const setActive = (id) => {
+    findItem(id, (item) => {
+        item.isActive = !item.isActive
+    });
+}
+
+export const setNumber = (id, number) => {
+    findItem(id, (item) => {
+        if(item.number + number > 0 && item.number + number < 11){
+            item.number += number
+        }
+    });
 }
 
 export default data
